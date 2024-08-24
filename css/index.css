@@ -170,17 +170,19 @@ main #container2 #inner_container1 #section2 #inner_section2 #about_section1 .in
     background-size: cover;
     background-position: center;
     background-color: lightblue;
-    border: 1px solid white;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
-main #container2 #inner_container1 #section2 #inner_section2 #about_section1 #interest_section1 img{
-    width: 50px;
-    height: 50px;
+main #container2 #inner_container1 #section2 #inner_section2 #about_section1 .interest_section img{
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid blue; */
 }
 main #container2 #inner_container1 #section2 #inner_section2 #about_section1 .interest_section:hover{
     border-radius: 0px 15px 15px 15px;
     background-color: rgba(175, 11, 93, 0.8);
+    border: 1px solid white;
     color: white;
 }
 /* main #container2 #inner_container1 #section2 #inner_section2 #about_section1 #interest_section1:hover{
