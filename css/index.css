@@ -50,6 +50,9 @@
         display: flex;
         justify-content: space-around;
     }
+    main #container2 header nav ul .main_link{
+        display: none;
+    }
     main #container2 header nav ul li{
         font-family: "Libre Barcode 128 Text", sans-serif;
         font-weight: 400;
@@ -519,9 +522,9 @@
         display: none;
     }
     main #container2 #inner_container1 #section1 #profile_photo{
-        height: 40vh;
-        width: 20vw;
-        margin: 1vh auto;
+        height: 30vh;
+        width: 60vw;
+        margin: 2vh auto;
         border-radius: 50%;
         background-image: url("./image/1686988464717.png");
         background-repeat: no-repeat;
@@ -530,18 +533,18 @@
     }
     main #container2 #inner_container1 #section1 #profile_info{
         width: 90%;
-        height: 40vh;
+        height: 50vh;
         margin: 5vh 5%;
         padding: 2vh 5%;
         text-align: center;
-        color: cyan;
     }
     main #container2 #inner_container1 #section1 #profile_info h1{
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 25px;
         margin: 5px 0px 10px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(45deg,darkorange,purple,violet,lightgreen);
+        background-image: linear-gradient(to right bottom,darkorange,purple,violet,lightgreen);
         transition: 4000ms;
     }
     main #container2 #inner_container1 #section1 #profile_info h1:hover{
@@ -552,7 +555,7 @@
         line-height: 30px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to bottom,red,blue,hotpink,purple);
+        background-image: linear-gradient(to right bottom,red,blue,hotpink,purple);
     }
                             /* section2 */
     main #container2 #inner_container1 #section2{
