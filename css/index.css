@@ -559,25 +559,26 @@
     }
                             /* section2 */
     main #container2 #inner_container1 #section2{
-        height: 92vh;
-        width: 70%;
-        padding: 5vh 2%;
+        height: 94vh;
+        width: 100%;
+        padding: 5vh 1%;
         text-align: justify;
         color: white;
     }
                             /* social-media-section */
     main #container2 #inner_container1 #section2 #inner_section1{
         width: 90%;
-        height: 72vh;
+        height: 74vh;
         margin: 5vh 5%;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         font-size: 40px;
         align-items: center;
     }
     main #container2 #inner_container1 #section2 #inner_section1 a{
         color: white;
-        transition: 3000ms;
+        transition: 2000ms;
     }
     main #container2 #inner_container1 #section2 #inner_section1 a:hover{
         font-size: 60px;
@@ -586,28 +587,37 @@
                             /* about-section */
     main #container2 #inner_container1 #section2 #inner_section2{
         width: 100%;
-        height: 82vh;
-        padding-right: 5%;
+        height: 84vh;
+        padding: 1vh 10px;
         overflow-y: scroll;
         display: none;
         justify-content: space-between;
         flex-direction: column;
         scrollbar-width: none;
     }
+    main #container2 #inner_container1 #section2 #inner_section2 h2{
+        font-size: 30px;
+    }
+    main #container2 #inner_container1 #section2 #inner_section2 h3{
+        font-size: 25px;
+    }
     main #container2 #inner_container1 #section2 #inner_section2 h6{
         color: rgb(182, 178, 178);
+        font-size: medium;
     }
     main #container2 #inner_container1 #section2 #inner_section2 #about_section1{
         width: 100%;
-        height: 38vh;
+        height: max-content;
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
     main #container2 #inner_container1 #section2 #inner_section2 #about_section1 .interest_section{
-        width: 30%;
+        width: 100%;
         height: 8vh;
+        margin: 5px 0px;
         font-size: large;
         padding: 2px;
         text-align: center;
@@ -642,10 +652,11 @@
                              /* contact-section */
     main #container2 #inner_container1 #section2 #inner_section3{
         width: 100%;
-        height: 82vh;
+        height: 84vh;
         flex-direction: column;
         justify-content: space-between;
         display: none;
+        border: 1px solid white;
     }
     main #container2 #inner_container1 #section2 #inner_section3 .inner_sec_box{
         width: 100%;
