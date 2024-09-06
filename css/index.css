@@ -656,26 +656,30 @@
         flex-direction: column;
         justify-content: space-between;
         display: none;
-        border: 1px solid white;
+        overflow: hidden;
     }
     main #container2 #inner_container1 #section2 #inner_section3 .inner_sec_box{
         width: 100%;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1{
-        height: 30vh;
+        height: 32vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info{
-        width: 45%;
-        height: 13vh;
-        padding: 5px 10px;
+        width: 95%;
+        height: 7vh;
+        padding: 2px 10px;
         background-color: rgba(0, 50, 90, 0.7);
     }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info h1{
+        font-size: large;
+        color: orangered;
+    }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info p{
-        font-size: x-large;
+        font-size: large;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 #contact_info4 #social_media{
         display: flex;
@@ -714,7 +718,7 @@
         background-color: black;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form input{
-        width: 45%;
+        width: 48%;
         height: 5vh;
         color: white;
         /* border: none; */
@@ -741,6 +745,7 @@
         outline: none;
         background-color: rgba(0,0,0,0.8);
         padding: 2px;
+        border-radius: 10px;
         transition: 1000ms;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #textarea_1:hover{
@@ -751,7 +756,7 @@
         box-shadow: -4px -4px 4px white;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form .button{
-        width: 10%;
+        width: 30%;
         text-transform: uppercase;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form .button:hover{
