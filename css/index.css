@@ -7,7 +7,7 @@
 
                             /* media-query : laptop */
 
-@media (min-width:900px) and (max-width:1500px)
+@media (min-width:1000px) and (max-width:1500px)
 {
     main{
         height: 100vh;
@@ -212,6 +212,7 @@
         flex-direction: column;
         justify-content: space-between;
         display: none;
+        overflow: scroll;
     }
     main #container2 #inner_container1 #section2 #inner_section3 .inner_sec_box{
         width: 100%;
@@ -295,8 +296,9 @@
         color: white;
         outline: none;
         background-color: rgba(0,0,0,0.8);
-        padding: 2px;
+        padding: 5px;
         transition: 1000ms;
+        border-radius: 10px;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #textarea_1:hover{
         border-radius: 0px 20px;
@@ -907,7 +909,7 @@
 
                                         /* media-query : tablet */
 
-@media (min-width:660px) and (max-width:900px)
+@media (min-width:660px) and (max-width:1000px)
 {
     main{
         height: 100vh;
@@ -1124,15 +1126,15 @@
         width: 100%;
         height: 86vh;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         display: none;
-        overflow: scroll;
     }
     main #container2 #inner_container1 #section2 #inner_section3 .inner_sec_box{
         width: 100%;
+        overflow: scroll;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1{
-        height: 38vh;
+        height: 32vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -1141,7 +1143,7 @@
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info{
         width: 95%;
-        height: 8vh;
+        height: 7vh;
         padding: 5px 10px;
         background-color: rgba(0, 50, 90, 0.7);
     }
@@ -1162,7 +1164,7 @@
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2{
         width: 100%;
-        height: 50vh;
+        height: 42vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1173,7 +1175,7 @@
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form{
         width: 100%;
-        height: 45vh;
+        height: 40vh;
         padding: 2vh 3%;
         display: flex;
         justify-content: space-between;
