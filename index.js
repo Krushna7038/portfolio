@@ -72,3 +72,10 @@ function getSection() {
     page_element_3.style.display = "block";
     page_element_4.style.display = "block";
 }
+
+// VALIDATION
+
+let val1 = document.getElementsByName("name");
+let val2 = document.getElementsByName("email");
+let val3 = document.getElementsByName("subject");
+let val4 = document.getElementsByName("textarea");
