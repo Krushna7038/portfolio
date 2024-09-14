@@ -121,7 +121,7 @@
         line-height: 30px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to bottom,red,blue,hotpink,purple);
+        background-image: linear-gradient(45deg,darkorange,purple,violet,lightgreen);
     }
                             /* section2 */
     main #container2 #inner_container1 #section2{
