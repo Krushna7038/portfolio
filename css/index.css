@@ -506,7 +506,6 @@
     main #container2 header nav ul li a{
         text-decoration: none;
         transition: 2000ms;
-        color: lightblue;
     }
     main #container2 header nav ul li a:hover{
         color: black;
