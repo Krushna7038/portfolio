@@ -257,12 +257,14 @@
         text-align: center;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form{
-        height: 45vh;
+        height: 60vh;
         padding: 2vh 3%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        transition: 3000ms;    
+        transition: 3000ms;
+        overflow: scroll;
+        scrollbar-width: none;    
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form:hover{
         border-radius: 0px 30px;
@@ -323,6 +325,21 @@
         background-image: linear-gradient(135deg,red,rgb(227, 9, 198));
         color: black;
         font-weight: bold;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form p{
+        color: red;
+        font-weight: bold;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror{
+        margin-left: 25%;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror2{
+        margin-left: 60%;
+        width: 100%;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror3{
+        margin-left: 60%;
+        width: 100%;
     }
     
                             /* resume-section */
@@ -729,6 +746,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
         transition: 3000ms;
+        overflow: scroll;
+        scrollbar-width: none;
+        border: 1px solid blue;
     }
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form:hover{
         border-radius: 0px 30px;
@@ -789,6 +809,21 @@
         color: black;
         font-weight: bold;
     }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form p{
+        color: red;
+        font-weight: bold;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror{
+        margin-left: 2%;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror2{
+        margin-left: 2%;
+        width: 100%;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror3{
+        margin-left: 2%;
+        width: 100%;
+    }
     
                             /* resume-section */
     main #container2 #inner_container1 #section2 #inner_section4{
@@ -810,6 +845,7 @@
     }
     main #container2 #inner_container1 #section2 #inner_section4 .inner_sect_box h1,h2{
         color: cyan;
+        font-size: 22px;
     }
     main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box1{
         display: flex;
@@ -1253,6 +1289,21 @@
         background-image: linear-gradient(135deg,red,rgb(227, 9, 198));
         color: black;
         font-weight: bold;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form p{
+        color: red;
+        font-weight: bold;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror{
+        margin-left: 2%;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror2{
+        margin-left: 2%;
+        width: 100%;
+    }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror3{
+        margin-left: 2%;
+        width: 100%;
     }
     
                         /* resume-section */

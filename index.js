@@ -75,29 +75,65 @@ function getSection() {
 
 // VALIDATION
 
+let error_message = document.getElementById("formerror");
+let error_message1 = document.getElementById("formerror1");
+let error_message2 = document.getElementById("formerror2");
+let error_message3 = document.getElementById("formerror3");
+
 function validateForm() {
 
     let valid_name = /^[A-Za-z" "]+$/;
-    let valid_email = /^[a-z_0-9.]{3,}@[a-z]{3,}[.]{1}[a-z.]{2,6}$/;
+    // let valid_email = /^[a-z_0-9]+$/;
     let valid_subject = /^[A-Za-z" "]+$/;
-    let valid_message = /^[A-Za-z" "]+$/;
+    let valid_message = /^[A-Za-z0-9_" "]+$/;
     let returnvalue = true;
 
     let val1 = document.forms['myForm']["fname"].value;
     if (val1.match(valid_name)) {
-        if (val1.length<4) {
-            alert("**Please enter full name.");
+        if (val1.length<8) {
+            error_message.innerHTML = "**Please enter full name";
+            // alert("**Please enter full name.");
             returnvalue = false;
         }else{
             returnvalue;
+            error_message.style.display = "none";
         }
     } else {
-        alert("**Please enter valid name.");
+        error_message.innerHTML = "**Please enter valid name";
+        // alert("**Please enter valid name.");
     }
 
     let val2 = document.forms['myForm']["femail"].value;
+    // if (val2.match(valid_email)) {
+    //     returnvalue;
+    //     error_message1.style.display = "none";
+    // } else {
+    //     error_message1.innerHTML = "**Please enter valid email.";
+    // }
 
     let val3 = document.forms['myForm']["fsubject"].value;
+    if (val3.match(valid_subject)) {
+        if (val3.length<20) {
+            error_message2.innerHTML = "**Subject should be minimum of 20 characters.";
+            returnvalue = false;
+        } else {
+            returnvalue;
+            error_message2.style.display = "none";
+        }
+    } else {
+        error_message2.innerHTML = "**Please enter valid subject.";
+    }
 
     let val4 = document.forms['myForm']["ftextarea"].value;
+    if (val4.match(valid_message)) {
+        if (val4.length<50) {
+            error_message3.innerHTML = "**Subject should be minimum of 50 characters.";
+            returnvalue = false;
+        } else {
+            returnvalue;
+            error_message3.style.display = "none";
+        }
+    } else {
+        error_message3.innerHTML = "**Please enter valid message.";
+    }
 }
