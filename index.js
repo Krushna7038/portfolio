@@ -94,6 +94,7 @@ function validateForm() {
     if (val1.match(valid_name)) {
         if (val1.length<8) {
             error_message.innerHTML = "**Please enter full name";
+            error_message.style.marginLeft = "2%";
             returnvalue = false;
         }else{
             returnvalue = true;

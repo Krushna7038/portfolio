@@ -263,6 +263,9 @@
         padding: 5px 10px;
         background-color: rgba(0, 50, 90, 0.7);
     }
+    main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info h1{
+        color: orangered;
+    }
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info p {
         font-size: x-large;
@@ -946,7 +949,7 @@
     }
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror {
-        margin-left: 2%;
+        margin-left: -3%;
     }
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #formerror2 {
@@ -1383,6 +1386,7 @@
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info h1 {
         font-size: larger;
+        color: orangered;
     }
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box1 .contact_info p {
