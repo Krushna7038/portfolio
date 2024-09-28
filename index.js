@@ -80,13 +80,14 @@ let error_message1 = document.getElementById("formerror1");
 let error_message2 = document.getElementById("formerror2");
 let error_message3 = document.getElementById("formerror3");
 
+let returnvalue = true;
 function validateForm() {
 
     let valid_name = /^[A-Za-z" "]+$/;
     // let valid_email = /^[a-z_0-9]+$/;
     let valid_subject = /^[A-Za-z" "]+$/;
     let valid_message = /^[A-Za-z0-9_" "]+$/;
-    let returnvalue = true;
+    
 
     let val1 = document.forms['myForm']["fname"].value;
     if (val1.match(valid_name)) {
@@ -95,11 +96,12 @@ function validateForm() {
             // alert("**Please enter full name.");
             returnvalue = false;
         }else{
-            returnvalue;
+            returnvalue = true;
             error_message.style.display = "none";
         }
     } else {
         error_message.innerHTML = "**Please enter valid name";
+        returnvalue = false;
         // alert("**Please enter valid name.");
     }
 
@@ -113,27 +115,39 @@ function validateForm() {
 
     let val3 = document.forms['myForm']["fsubject"].value;
     if (val3.match(valid_subject)) {
-        if (val3.length<20) {
-            error_message2.innerHTML = "**Subject should be minimum of 20 characters.";
+        if (val3.length<30) {
+            error_message2.innerHTML = "**Subject should be minimum of 30 characters.";
             returnvalue = false;
         } else {
-            returnvalue;
+            returnvalue = true;
             error_message2.style.display = "none";
         }
     } else {
         error_message2.innerHTML = "**Please enter valid subject.";
+        returnvalue = false;
     }
 
     let val4 = document.forms['myForm']["ftextarea"].value;
     if (val4.match(valid_message)) {
         if (val4.length<50) {
-            error_message3.innerHTML = "**Subject should be minimum of 50 characters.";
+            error_message3.innerHTML = "**Message should be minimum of 50 characters.";
             returnvalue = false;
         } else {
-            returnvalue;
+            returnvalue = true;
             error_message3.style.display = "none";
         }
     } else {
         error_message3.innerHTML = "**Please enter valid message.";
+        returnvalue = false;
+    }
+}
+
+finalvalue = true;
+function checkOut() {
+    if (returnvalue==true) {
+        finalvalue;
+    } else {
+        finalvalue = false;
+        alert("Please enter all valid data.");
     }
 }
