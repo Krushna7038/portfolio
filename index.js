@@ -88,12 +88,12 @@ function validateForm() {
     let valid_subject = /^[A-Za-z" "]+$/;
     let valid_message = /^[A-Za-z0-9_" "]+$/;
     
+    // name
 
     let val1 = document.forms['myForm']["fname"].value;
     if (val1.match(valid_name)) {
         if (val1.length<8) {
             error_message.innerHTML = "**Please enter full name";
-            // alert("**Please enter full name.");
             returnvalue = false;
         }else{
             returnvalue = true;
@@ -102,8 +102,9 @@ function validateForm() {
     } else {
         error_message.innerHTML = "**Please enter valid name";
         returnvalue = false;
-        // alert("**Please enter valid name.");
     }
+
+    // email
 
     let val2 = document.forms['myForm']["femail"].value;
     // if (val2.match(valid_email)) {
@@ -112,6 +113,8 @@ function validateForm() {
     // } else {
     //     error_message1.innerHTML = "**Please enter valid email.";
     // }
+
+    // subject
 
     let val3 = document.forms['myForm']["fsubject"].value;
     if (val3.match(valid_subject)) {
@@ -126,6 +129,8 @@ function validateForm() {
         error_message2.innerHTML = "**Please enter valid subject.";
         returnvalue = false;
     }
+
+    // message
 
     let val4 = document.forms['myForm']["ftextarea"].value;
     if (val4.match(valid_message)) {
