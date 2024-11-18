@@ -100,7 +100,10 @@ function validateForm() {
             returnvalue = true;
             error_message.style.display = "none";
         }
-    } else {
+    }else if (val1.length>8 && val1.match(/^[A-Za-z0-9_" "]+$/)) {
+        error_message.innerHTML = "**Numbers are not allowed.";
+        returnvalue = false;
+    }else {
         error_message.innerHTML = "**Please enter valid name";
         returnvalue = false;
     }
