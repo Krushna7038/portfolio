@@ -183,10 +183,12 @@
         justify-content: space-between;
         flex-direction: column;
         scrollbar-width: none;
+        font-family: cursive;
     }
 
     main #container2 #inner_container1 #section2 #inner_section2 h6 {
         color: rgb(182, 178, 178);
+        /* font-family: cursive; */
     }
 
     main #container2 #inner_container1 #section2 #inner_section2 #about_section1 {
@@ -219,13 +221,13 @@
     main #container2 #inner_container1 #section2 #inner_section2 #about_section1 .interest_section img {
         width: 40px;
         height: 40px;
-        /* border: 1px solid blue; */
     }
 
     main #container2 #inner_container1 #section2 #inner_section2 #about_section1 .interest_section:hover {
-        border-radius: 0px 15px 15px 15px;
+        border-radius: 0px 25px 25px 25px;
         background-color: rgba(175, 11, 93, 0.8);
         border: 1px solid white;
+        font-family: normal;
         color: white;
     }
 
@@ -334,7 +336,6 @@
         box-shadow: -4px -4px 4px white;
         color: white;
         font-weight: bold;
-        /* background-image: linear-gradient(135deg,red,rgb(227, 9, 198)); */
     }
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #subject_1 {
@@ -355,7 +356,6 @@
 
     main #container2 #inner_container1 #section2 #inner_section3 #inner_sec_box2 form #textarea_1:hover {
         border-radius: 0px 20px;
-        /* background-image: linear-gradient(135deg,red,rgb(227, 9, 198)); */
         color: white;
         font-weight: bold;
         box-shadow: -4px -4px 4px white;
@@ -504,6 +504,8 @@
 
     main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box1 #resume_box3 .coder_1 .fa {
         color: yellow;
+        /* font-size: large; */
+        font-weight: bolder;
     }
 
     main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box2 #resume_box4 {
@@ -728,6 +730,7 @@
         justify-content: space-between;
         flex-direction: column;
         scrollbar-width: none;
+        font-family: cursive;
     }
 
     main #container2 #inner_container1 #section2 #inner_section2 h2 {
@@ -1291,6 +1294,7 @@
         justify-content: space-between;
         flex-direction: column;
         scrollbar-width: none;
+        font-family: cursive;
     }
 
     main #container2 #inner_container1 #section2 #inner_section2 h2 {
