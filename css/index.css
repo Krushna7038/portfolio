@@ -500,6 +500,7 @@
     main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box1 #resume_box3 .coder_1 {
         padding: 5px;
         background-color: rgba(50, 50, 50, 0.5);
+        /* margin-bottom: 1px; */
     }
 
     main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box1 #resume_box3 .coder_1 .fa {
@@ -512,6 +513,9 @@
         height: max-content;
         flex-direction: column;
         justify-content: space-between;
+    }
+    main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box2 #resume_box4 h4{
+        margin-bottom: 10px;
     }
 
     main #container2 #inner_container1 #section2 #inner_section4 #inner_sect_box2 #resume_box4 .intern_1 {
