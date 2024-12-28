@@ -111,17 +111,25 @@
                         </div>
                         <div class="inner_sec_box" id="inner_sec_box2">
                             <h2>Message me here</h2>
-                            <form action="" id="myForm" onsubmit="return validateForm()" oninput="return validateForm()">
-                                <input type="text" name="fname" id="name_1" placeholder="Enter Your Name" required>
-                                <input type="email" name="femail" id="email_1" placeholder="Enter Your Email" required>
-                                <p id="formerror"></p>
-                                <!-- <p id="formerror1" style="color: red; font-weight: bold; margin-left: -60%;"></p> -->
+                            <form action="" name="myForm" oninput="return validateForm()">
+                                <div class="input_box" id="input_box1">
+                                    <div class="inner_input_box">
+                                        <input type="text" name="fname" id="name_1" placeholder="Enter Your Name" required>
+                                        <span id="nameid"></span>
+                                    </div>
+                                    <div class="inner_input_box">
+                                        <input type="email" name="femail" id="email_1" placeholder="Enter Your Email" required>
+                                        <span id="emailid"></span>
+                                    </div>                                    
+                                </div>                                    
                                 <input type="text" name="fsubject" id="subject_1" placeholder="Enter Subject" required>
-                                <p id="formerror2"></p>
+                                <span id="subjectid"></span>                                
                                 <textarea name="ftextarea" id="textarea_1" placeholder="Enter your message here..." required></textarea>
-                                <p id="formerror3"></p>
-                                <input type="submit" value="send" class="button" id="button_1">
-                                <input type="reset" value="clear" class="button" id="button_2">
+                                <span id="textareaid"></span>                                
+                                <div class="input_box" id="input_box2">
+                                    <input type="submit" value="send" class="button" id="button_1">
+                                    <input type="reset" value="clear" class="button" id="button_2">
+                                </div>
                             </form>
                         </div>
                     </div>
