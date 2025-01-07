@@ -204,3 +204,17 @@ function validateForm() {
         returnValue = false;
     }
 }
+
+function clearForm() {
+    clear_name.innerHTML = "";
+    name_id.style.border = "1px solid grey";
+
+    clear_email.innerHTML = "";
+    email_id.style.border = "1px solid grey";
+
+    clear_subject.innerHTML = "";
+    subject_id.style.border = "1px solid grey";
+    
+    clear_message.innerHTML = "";
+    message_id.style.border = "1px solid grey";
+}
