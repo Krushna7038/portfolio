@@ -89,13 +89,13 @@ let input_box = document.getElementById("input_box1");
 function nameError() {
     clear_name.innerHTML = "";
     name_id.style.border = "2px solid green";
-    input_box.style.height = "6vh";
+    input_box.style.height = "5vh";
 }
 
 function emailError() {
     clear_email.innerHTML = "";
     email_id.style.border = "2px solid green";
-    input_box.style.height = "6vh";
+    input_box.style.height = "5vh";
 }
 
 function subjectError() {
@@ -205,9 +205,11 @@ function validateForm() {
     }
 }
 
+                // clear form
 function clearForm() {
     clear_name.innerHTML = "";
     name_id.style.border = "1px solid grey";
+    input_box.style.height = "5vh";
 
     clear_email.innerHTML = "";
     email_id.style.border = "1px solid grey";
