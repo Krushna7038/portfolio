@@ -220,3 +220,13 @@ function clearForm() {
     clear_message.innerHTML = "";
     message_id.style.border = "1px solid grey";
 }
+
+let id_name = document.getElementById("sub2");
+
+function changeContent() {
+    id_name.innerHTML = "HTML, CSS, JavaScript";
+}
+
+function originalContent() {
+    id_name.innerHTML = "Web Technology";
+}
